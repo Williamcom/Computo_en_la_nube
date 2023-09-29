@@ -28,7 +28,7 @@ def median(datos):
 def gen_contrasena():
   n=random.randrange(7,10)
   contrasena = ""
-  for i in range(0,n):
+  for i in range(1,n):
     contrasena += chr(random.randrange(33,126))
   return contrasena
 
