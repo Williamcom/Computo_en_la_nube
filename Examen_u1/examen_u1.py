@@ -25,15 +25,13 @@ def median(datos):
     datos.sort()
     return datos[mitad]
 
-lista=[1,4,3]
-print(median(lista))
-
 import random
 
-def gen_contrasena(n):
+def gen_contrasena():
+  n=random.randrange(7,10)
   contrasena = ""
   for i in range(1,n):
-    contrasena += chr(random.randrange(33,126,1))
+    contrasena += chr(random.randrange(33,126))
   return contrasena
 
 def hip(a,b):
